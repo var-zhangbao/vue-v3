@@ -1,19 +1,17 @@
 <template>
-  <div class="home">
-    <nav-bar></nav-bar>
-  </div>
+   <div>
+     <NavBar />
+     登录
+   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import NavBar from "@/components/NavBar.vue";
-
 @Options({
   components: {
-    HelloWorld,
     NavBar
   }
 })
-export default class Home extends Vue {}
+export default class Main extends Vue {}
 </script>
